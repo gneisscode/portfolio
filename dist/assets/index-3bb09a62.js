@@ -3864,8 +3864,7 @@ cursor: pointer;
   flex: 3;
   position: relative;
   @media only screen and (max-width: 768px) {
-    flex: 1;
-    width: 100%;
+    display:none;
   }
 `,FB=rt.img`
   width: 350px;
@@ -3880,15 +3879,9 @@ cursor: pointer;
   animation: animate 2s infinite ease alternate;
   border-radius: 100%;
 
-  @media only screen and (max-width: 768px) {
-    width: 250px;
-    height: 250px;
-  }
 
-  @media only screen and (max-width: 375px) {
-    width: 150px;
-    height: 150px;
-  }
+
+
 
   @keyframes animate {
     to {
@@ -4186,7 +4179,7 @@ cursor: pointer;
   cursor: pointer;
   border-radius: 5px;
   padding: 20px;
-`,R6=()=>{const n=Ce.useRef(),[e,t]=Ce.useState(null);return Xe(T6,{children:Xe(b6,{children:ln(C6,{ref:n,onSubmit:r=>{r.preventDefault(),E6.sendForm("service_jp3iexb","template_ntt3qjg",n.current,"0MweSGx-6fB6Pmuxl").then(s=>{console.log(s.text),t(!0)},s=>{console.log(s.text),t(!1)})},children:[Xe(A6,{children:"Contact Me"}),Xe(dE,{placeholder:"Name",name:"name"}),Xe(dE,{placeholder:"Email",name:"email"}),Xe(P6,{placeholder:"Write your message",rows:10,name:"message"}),Xe(L6,{type:"submit",children:"Send"}),e&&"Your message has been sent. I'll get back to you soon :)"]})})})},I6=rt.div`
+`,R6=()=>{const n=Ce.useRef(),[e,t]=Ce.useState(null);return Xe(T6,{children:Xe(b6,{children:ln(C6,{ref:n,onSubmit:r=>{r.preventDefault(),E6.sendForm("service_3tthslc","template_ntt3qjg",n.current,"0MweSGx-6fB6Pmuxl").then(s=>{console.log(s.text),t(!0)},s=>{console.log(s.text),t(!1)})},children:[Xe(A6,{children:"Contact Me"}),Xe(dE,{placeholder:"Name",name:"name"}),Xe(dE,{placeholder:"Email",name:"email"}),Xe(P6,{placeholder:"Write your message",rows:10,name:"message"}),Xe(L6,{type:"submit",children:"Send"}),e&&"Your message has been sent. I'll get back to you soon :)"]})})})},I6=rt.div`
   height: 100vh;
   width: 100%;
   font-family: "Roboto", sans-serif;

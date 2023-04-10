@@ -115,8 +115,7 @@ const Right = styled.div`
   flex: 3;
   position: relative;
   @media only screen and (max-width: 768px) {
-    flex: 1;
-    width: 100%;
+    display:none;
   }
 `;
 
@@ -133,15 +132,9 @@ const Img = styled.img`
   animation: animate 2s infinite ease alternate;
   border-radius: 100%;
 
-  @media only screen and (max-width: 768px) {
-    width: 250px;
-    height: 250px;
-  }
 
-  @media only screen and (max-width: 375px) {
-    width: 150px;
-    height: 150px;
-  }
+
+
 
   @keyframes animate {
     to {
