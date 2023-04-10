@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import React from "react";
-import styled from "styled-components";
+import styled from 'styled-components'
 import Hero from './Hero';
 import What from './What';
 import Works from './Works';
