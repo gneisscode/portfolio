@@ -4149,7 +4149,7 @@ cursor: pointer;
   }
   color: #3d1c56;
 
-  @media only screen and (max-width: 768px) {
+  /* @media only screen and (max-width: 768px) {
     scroll-snap-type: none;
-  }
+  } */
 `,I6=()=>ln(R6,{children:[Ze(GB,{}),Ze($B,{}),Ze(y6,{}),Ze(L6,{})]});Iv.createRoot(document.getElementById("root")).render(Ze(Kf.StrictMode,{children:Ze(I6,{})}));
