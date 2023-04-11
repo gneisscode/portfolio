@@ -53,11 +53,11 @@ const List = styled.ul`
 `;
 
 const ListItem = styled.li`
-  font-size: 55px;
+  font-size: 60px;
   font-weight: bold;
   cursor: pointer;
   color: transparent;
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 1px #3d1c56;
   position: relative;
 
   @media only screen and (max-width: 768px) {

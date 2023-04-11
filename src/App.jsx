@@ -21,6 +21,10 @@ const Container = styled.div`
     display: none;
   }
   color: #3d1c56;
+
+  @media only screen and (max-width: 768px) {
+    scroll-snap-type: none;
+  }
 `;
 
 const App = () => {

@@ -21,6 +21,9 @@ const Container = styled.div`
   height: 100vh;
   width: 80%;
 
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const Left = styled.div`
@@ -41,6 +44,7 @@ const Right = styled.div`
   @media only screen and (max-width: 768px) {
     align-items: center;
     text-align: center;
+    margin-top: -6em;
   }
 `;
 const Title = styled.h1`

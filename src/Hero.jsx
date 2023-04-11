@@ -24,9 +24,6 @@ const Container = styled.div`
 
   @media only screen and (max-width: 768px) {
     width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 `;
 
@@ -40,6 +37,10 @@ const Left = styled.div`
   @media only screen and (max-width: 768px) {
     flex: 1;
     align-items: center;
+    margin-top: -4em;
+    width: 100%
+
+    
   }
 `;
 
@@ -116,6 +117,7 @@ const Right = styled.div`
   position: relative;
   @media only screen and (max-width: 768px) {
     display:none;
+    
   }
 `;
 
