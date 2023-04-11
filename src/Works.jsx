@@ -66,6 +66,7 @@ const ListItem = styled.li`
     -webkit-text-stroke: 0px;
 
     ::after {
+      content: none;
       color: transparent;
     }
   }
@@ -99,6 +100,7 @@ const Right = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  
   
 `;
 

@@ -4,6 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import styled from "styled-components";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import "./App.css";
 
 const Container = styled.div`
   display: flex;
@@ -12,29 +13,28 @@ const Container = styled.div`
   align-items: center;
   gap: 2em;
 
-
 `;
 
 
 
-const Img = styled.img`
-  width: 400px;
-  height: 400px;
-  border-radius: 10px;
-  animation: bounce 0.3s ease-in-out 2;
+// const Img = styled.img`
+//   width: 400px;
+//   height: 400px;
+//   border-radius: 10px;
+//   animation: bounce 0.3s ease-in-out 2;
 
-  @keyframes bounce {
-    0% {
-      transform: translateY(0); /* start at original position */
-    }
-    50% {
-      transform: translateY(-20px); /* move up 20 pixels */
-    }
-    100% {
-      transform: translateY(0); /* move back to original position */
-    }
-  }
-`;
+//   @keyframes bounce {
+//     0% {
+//       transform: translateY(0); /* start at original position */
+//     }
+//     50% {
+//       transform: translateY(-20px); /* move up 20 pixels */
+//     }
+//     100% {
+//       transform: translateY(0); /* move back to original position */
+//     }
+//   }
+// `;
 
 const IconWrapper = styled.div`
   display: flex;
@@ -53,8 +53,8 @@ const Icon = styled.img`
   height: 60px;
 
   @media only screen and (max-width: 768px) {
-    width: 40px;
-    height:40px;
+    width: 30px;
+    height:30px;
   }
 `;
 
@@ -64,8 +64,8 @@ const Development = () => {
       {/* <Img src="assets/dev.jpg" /> */}
       <LazyLoadImage
         src="assets/dev.jpg"
-        width="400px"
-        height="400px"
+        width="400"
+        height="400"
         alt="Image Alt"
         effect="blur"
         className="lazy"

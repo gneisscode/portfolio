@@ -14,24 +14,24 @@ const Container = styled.div`
 `;
 
 
-const Img = styled.img`
-  width: 400px;
-  height: 400px;
-  border-radius: 10px;
-  animation: bounce 0.3s ease-in-out 2;
+// const Img = styled.img`
+//   width: 400px;
+//   height: 400px;
+//   border-radius: 10px;
+//   animation: bounce 0.3s ease-in-out 2;
 
-  @keyframes bounce {
-    0% {
-      transform: translateY(0); /* start at original position */
-    }
-    50% {
-      transform: translateY(-20px); /* move up 20 pixels */
-    }
-    100% {
-      transform: translateY(0); /* move back to original position */
-    }
-  }
-`;
+//   @keyframes bounce {
+//     0% {
+//       transform: translateY(0); /* start at original position */
+//     }
+//     50% {
+//       transform: translateY(-20px); /* move up 20 pixels */
+//     }
+//     100% {
+//       transform: translateY(0); /* move back to original position */
+//     }
+//   }
+// `;
 
 
 const IconWrapper = styled.div`

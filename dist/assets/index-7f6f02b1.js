@@ -3956,25 +3956,7 @@ cursor: pointer;
   align-items: center;
   gap: 2em;
 
-
-`;lt.img`
-  width: 400px;
-  height: 400px;
-  border-radius: 10px;
-  animation: bounce 0.3s ease-in-out 2;
-
-  @keyframes bounce {
-    0% {
-      transform: translateY(0); /* start at original position */
-    }
-    50% {
-      transform: translateY(-20px); /* move up 20 pixels */
-    }
-    100% {
-      transform: translateY(0); /* move back to original position */
-    }
-  }
-`;const n6=lt.div`
+`,n6=lt.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3989,33 +3971,16 @@ cursor: pointer;
   height: 60px;
 
   @media only screen and (max-width: 768px) {
-    width: 40px;
-    height:40px;
+    width: 30px;
+    height:30px;
   }
-`,r6=()=>ln(t6,{children:[Ze(Zf.LazyLoadImage,{src:"assets/dev.jpg",width:"400px",height:"400px",alt:"Image Alt",effect:"blur",className:"lazy"}),ln(n6,{children:[Ze(wa,{src:"assets/javascript-1.svg"}),Ze(wa,{src:"assets/react-1.svg"}),Ze(wa,{src:"assets/typescript.svg"}),Ze(wa,{src:"assets/nodejs-1.svg"}),Ze(wa,{src:"assets/html-1.svg"}),Ze(wa,{src:"assets/vitejs.svg"}),Ze(wa,{src:"assets/webpack.svg"})]})]}),i6=lt.div`
+`,r6=()=>ln(t6,{children:[Ze(Zf.LazyLoadImage,{src:"assets/dev.jpg",width:"400",height:"400",alt:"Image Alt",effect:"blur",className:"lazy"}),ln(n6,{children:[Ze(wa,{src:"assets/javascript-1.svg"}),Ze(wa,{src:"assets/react-1.svg"}),Ze(wa,{src:"assets/typescript.svg"}),Ze(wa,{src:"assets/nodejs-1.svg"}),Ze(wa,{src:"assets/html-1.svg"}),Ze(wa,{src:"assets/vitejs.svg"}),Ze(wa,{src:"assets/webpack.svg"})]})]}),i6=lt.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2em;
-`;lt.img`
-  width: 400px;
-  height: 400px;
-  border-radius: 10px;
-  animation: bounce 0.3s ease-in-out 2;
-
-  @keyframes bounce {
-    0% {
-      transform: translateY(0); /* start at original position */
-    }
-    50% {
-      transform: translateY(-20px); /* move up 20 pixels */
-    }
-    100% {
-      transform: translateY(0); /* move back to original position */
-    }
-  }
-`;const s6=lt.div`
+`,s6=lt.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4098,6 +4063,7 @@ cursor: pointer;
     -webkit-text-stroke: 0px;
 
     ::after {
+      content: none;
       color: transparent;
     }
   }
@@ -4129,6 +4095,7 @@ cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  
   
 `,y6=()=>{const[n,e]=ke.useState("Web Design");return Ze(d6,{children:ln(h6,{children:[Ze(p6,{children:Ze(m6,{children:f6.map(t=>Ze(g6,{text:t,onClick:()=>e(t),children:t},t))})}),Ze(v6,{children:n==="Web Design"?Ze(c6,{}):n==="Development"?Ze(r6,{}):Ze(a6,{})})]})})},Jf={_origin:"https://api.emailjs.com"},_6=(n,e="https://api.emailjs.com")=>{Jf._userID=n,Jf._origin=e},cC=(n,e,t)=>{if(!n)throw"The public key is required. Visit https://dashboard.emailjs.com/admin/account";if(!e)throw"The service ID is required. Visit https://dashboard.emailjs.com/admin";if(!t)throw"The template ID is required. Visit https://dashboard.emailjs.com/admin/templates";return!0};class hb{constructor(e){this.status=e?e.status:0,this.text=e?e.responseText:"Network Error"}}const fC=(n,e,t={})=>new Promise((r,i)=>{const s=new XMLHttpRequest;s.addEventListener("load",({target:o})=>{const a=new hb(o);a.status===200||a.text==="OK"?r(a):i(a)}),s.addEventListener("error",({target:o})=>{i(new hb(o))}),s.open("POST",Jf._origin+n,!0),Object.keys(t).forEach(o=>{s.setRequestHeader(o,t[o])}),s.send(e)}),x6=(n,e,t,r)=>{const i=r||Jf._userID;return cC(i,n,e),fC("/api/v1.0/email/send",JSON.stringify({lib_version:"3.11.0",user_id:i,service_id:n,template_id:e,template_params:t}),{"Content-type":"application/json"})},S6=n=>{let e;if(typeof n=="string"?e=document.querySelector(n):e=n,!e||e.nodeName!=="FORM")throw"The 3rd parameter is expected to be the HTML form element or the style selector of form";return e},w6=(n,e,t,r)=>{const i=r||Jf._userID,s=S6(t);cC(i,n,e);const o=new FormData(s);return o.append("lib_version","3.11.0"),o.append("service_id",n),o.append("template_id",e),o.append("user_id",i),fC("/api/v1.0/email/send-form",o)},M6={init:_6,send:x6,sendForm:w6},b6=lt.div`
   height: 100vh;
