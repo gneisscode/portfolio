@@ -1,5 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+import "./App.css";
 
 const Container = styled.div`
   display: flex;
@@ -9,28 +12,6 @@ const Container = styled.div`
   gap: 2em;
 `;
 
-const Img = styled.img`
-  width: 550px;
-  height: 400px;
-  border-radius: 10px;
-  animation: bounce 0.3s ease-in-out 2;
-
-  @media only screen and (max-width: 768px) {
-    width: 500px;
-  }
-
-  @keyframes bounce {
-    0% {
-      transform: translateY(0); /* start at original position */
-    }
-    50% {
-      transform: translateY(-20px); /* move up 20 pixels */
-    }
-    100% {
-      transform: translateY(0); /* move back to original position */
-    }
-  }
-`;
 
 const IconWrapper = styled.div`
   display: flex;
@@ -56,14 +37,21 @@ const Icon = styled.img`
 const WebDesign = () => {
   return (
     <Container>
-    <Img src='assets/wd.jpg'/>
-    <IconWrapper>
+      <LazyLoadImage
+        src="assets/wd.jpg"
+        width="550"
+        height="400"
+        alt="Image Alt"
+        effect="blur"
+        className='lazy'
+      />
+      <IconWrapper>
         <Icon src="assets/css-3.svg" />
         <Icon src="assets/tailwind-css-2.svg" />
         <Icon src="assets/bootstrap-5-1.svg" />
       </IconWrapper>
     </Container>
-  )
+  );
 }
 
 export default WebDesign

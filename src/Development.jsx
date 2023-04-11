@@ -2,6 +2,8 @@ import React, { Suspense } from "react";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import styled from "styled-components";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Container = styled.div`
   display: flex;
@@ -59,7 +61,15 @@ const Icon = styled.img`
 const Development = () => {
   return (
     <Container>
-      <Img src="assets/dev.jpg" />
+      {/* <Img src="assets/dev.jpg" /> */}
+      <LazyLoadImage
+        src="assets/dev.jpg"
+        width="400px"
+        height="400px"
+        alt="Image Alt"
+        effect="blur"
+        className="lazy"
+      />
 
       <IconWrapper>
         <Icon src="assets/javascript-1.svg" />

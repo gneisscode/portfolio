@@ -64,6 +64,10 @@ const ListItem = styled.li`
     font-size: 24px;
     color: #3d1c56;
     -webkit-text-stroke: 0px;
+
+    ::after {
+      color: transparent;
+    }
   }
 
   ::after {

@@ -1,5 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 
 
 const Container = styled.div`
@@ -49,7 +52,15 @@ const Icon = styled.img`
 const ProductDesign = () => {
   return (
     <Container>
-      <Img src="assets/pd.jpg" />
+      {/* <Img src="assets/pd.jpg" /> */}
+      <LazyLoadImage
+        src="assets/pd.jpg"
+        width="400"
+        height="400"
+        alt="Image Alt"
+        effect="blur"
+        className="lazy"
+      />
 
       <IconWrapper>
         <Icon src="assets/figma-5.svg" />
